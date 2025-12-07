@@ -80,6 +80,9 @@
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.
   Fill them out with the right functional requirements.
+
+  NOTE: All requirements must align with the "AI-Generated Technical Book Constitution" principles,
+  especially regarding technical accuracy, clear writing, and consistent formatting.
 -->
 
 ### Functional Requirements

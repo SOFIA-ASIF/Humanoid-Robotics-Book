@@ -56,7 +56,7 @@ description: "Task list template for feature implementation"
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
+**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented. All foundational tasks should align with the 'AI-Generated Technical Book Constitution' principles, especially regarding technical accuracy and test-first development.
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 

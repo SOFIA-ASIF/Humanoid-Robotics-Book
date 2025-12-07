@@ -1,55 +1,62 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report -->
+<!--
+Version change: 0.0.0 -> 1.0.0
+Modified principles:
+- [PRINCIPLE_1_NAME] -> Technical Accuracy
+- [PRINCIPLE_2_NAME] -> Clear and Structured Writing
+- [PRINCIPLE_3_NAME] -> Consistent Voice and Format
+- [PRINCIPLE_4_NAME] -> AI-Native and Spec-Driven Workflow
+Added sections:
+- Standards
+- Constraints
+Removed sections:
+- None
+Templates requiring updates:
+- .specify/templates/plan-template.md: ⚠ pending
+- .specify/templates/spec-template.md: ⚠ pending
+- .specify/templates/tasks-template.md: ⚠ pending
+- .specify/templates/commands/*.md: ⚠ pending
+Follow-up TODOs:
+- None
+-->
+# AI-Generated Technical Book Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Technical Accuracy
+All content must be technically accurate, free from hallucinations. Unverifiable claims MUST be explicitly marked with TODOs for future validation.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clear and Structured Writing
+Content MUST be written in a clear, concise, and structured manner, targeting a Computer Science/engineering audience.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Consistent Voice and Format
+A consistent voice, terminology, and chapter format MUST be maintained throughout the book to ensure a cohesive reading experience.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. AI-Native and Spec-Driven Workflow
+The entire book development MUST adhere to an AI-native, spec-driven workflow, where each file and content section is regenerable from its corresponding specification.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Standards
 
-### [PRINCIPLE_6_NAME]
+- Docusaurus-compliant MD/MDX with frontmatter.
+- Chapter template: Overview → Objectives → Core Content → Examples → Figures → Summary.
+- IEEE-style citations for factual claims.
+- Code examples MUST be validated or marked for review.
+- One figure per chapter (placeholder allowed).
 
+## Constraints
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- 8–12 chapters; 20k–30k words total.
+- Includes preface, glossary, index.
+- Build must pass `npm run build` with zero warnings.
+- GitHub Pages deployment via GitHub Actions.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution supersedes all other practices and documentation within the project. Amendments to this Constitution require:
+1.  Documentation of proposed changes and rationale.
+2.  Approval by project maintainers.
+3.  A plan for migrating existing content or processes to align with the new principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+All Pull Requests and code reviews MUST verify compliance with the principles and standards outlined herein. Complexity in any aspect of the project MUST be justified by clear necessity and adherence to the core principles.
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
