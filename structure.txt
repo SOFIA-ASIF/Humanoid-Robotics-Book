@@ -30,6 +30,7 @@ C:.
 |           sp.tasks.md
 |           
 +---.docusaurus
+|   |   client-manifest.json
 |   |   client-modules.js
 |   |   codeTranslations.json
 |   |   docusaurus.config.mjs
@@ -141,25 +142,210 @@ C:.
 |           docusaurus-plushie-banner.jpeg
 |           index.md
 |           
++---build
+|   |   404.html
+|   |   index.html
+|   |   sitemap.xml
+|   |   
+|   +---assets
+|   |   +---css
+|   |   |       styles.33c651a2.css
+|   |   |       
+|   |   +---images
+|   |   |       chap-1-04b3ae83d37fed7c569dfbfe2c7864c6.png
+|   |   |       chap-2-d2b2f486152039e361a160a08033cb01.png
+|   |   |       chap-3-ff30bac50e41227cfe5f1e87d7ccb01d.png
+|   |   |       chap-4-0c2745bddb8ac12d909472b258390ee9.png
+|   |   |       chap-5-5eb1167f22c09224a26b93a78edaa052.png
+|   |   |       chap-6-a51e956361b216d094af801c0d75a2d2.png
+|   |   |       docsVersionDropdown-35e13cbe46c9923327f30a76a90bff3b.png
+|   |   |       docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg
+|   |   |       localeDropdown-f0d995e751e7656a1b0dbbc1134e49c2.png
+|   |   |       
+|   |   \---js
+|   |           016e1340.ff2c1593.js
+|   |           01a85c17.9481ed70.js
+|   |           0b64aecd.3e0e646d.js
+|   |           0e384e19.8127fa62.js
+|   |           14eb3368.c192696c.js
+|   |           17896441.2b22a491.js
+|   |           2237.83da5e8c.js
+|   |           3269.6cb7986f.js
+|   |           33fc5bb8.e633dc2e.js
+|   |           36994c47.07f53a98.js
+|   |           3f017f68.a07065ae.js
+|   |           5103b3ca.f5006455.js
+|   |           5158.1729a0dc.js
+|   |           544a4c0c.7e4cc1b5.js
+|   |           59362658.b9eef1f8.js
+|   |           5d4163c4.91a17384.js
+|   |           5e95c892.dfed27a4.js
+|   |           621db11d.0a77770a.js
+|   |           65623ed9.56175059.js
+|   |           6875c492.e0a4eebc.js
+|   |           73664a40.7edee3c8.js
+|   |           7661071f.efa4e2b3.js
+|   |           7bec9f08.c7c6175c.js
+|   |           814f3328.e51aad91.js
+|   |           86dfd163.53161011.js
+|   |           8717b14a.9976899c.js
+|   |           8869b097.4e0b1232.js
+|   |           8c56a97b.7165f49a.js
+|   |           925b3f96.f41fdb93.js
+|   |           983e5f58.a68b30dc.js
+|   |           9e4087bc.2c4f3d25.js
+|   |           a6aa9e1f.3da455b8.js
+|   |           a7456010.e1f904ec.js
+|   |           a7bd4aaa.30d25486.js
+|   |           a94703ab.d67c6f22.js
+|   |           aba21aa0.7e75a5ce.js
+|   |           acecf23e.eb407b86.js
+|   |           be01329f.a7f0c8eb.js
+|   |           c49f6adf.827b3911.js
+|   |           c4f5d8e4.11339999.js
+|   |           c96e22d3.5f247867.js
+|   |           ccc49370.231a95cb.js
+|   |           cd754e02.01986ab8.js
+|   |           d10e2a60.5bb698c2.js
+|   |           d9f32620.7b410a2d.js
+|   |           dff1c289.9aa84135.js
+|   |           e273c56f.dc97fe12.js
+|   |           e44a2883.d6c3937d.js
+|   |           e747ec83.01e9a061.js
+|   |           e932793b.1a6feca8.js
+|   |           f4f34a3a.78ecad5f.js
+|   |           f7dcd367.de8a87d8.js
+|   |           feecefa5.bc89126b.js
+|   |           main.7e852222.js
+|   |           main.7e852222.js.LICENSE.txt
+|   |           runtime~main.239e0792.js
+|   |           
+|   +---blog
+|   |   |   atom.css
+|   |   |   atom.xml
+|   |   |   atom.xsl
+|   |   |   index.html
+|   |   |   rss.css
+|   |   |   rss.xml
+|   |   |   rss.xsl
+|   |   |   
+|   |   +---archive
+|   |   |       index.html
+|   |   |       
+|   |   +---authors
+|   |   |   |   index.html
+|   |   |   |   
+|   |   |   +---all-sebastien-lorber-articles
+|   |   |   |       index.html
+|   |   |   |       
+|   |   |   \---yangshun
+|   |   |           index.html
+|   |   |           
+|   |   +---first-blog-post
+|   |   |       index.html
+|   |   |       
+|   |   +---long-blog-post
+|   |   |       index.html
+|   |   |       
+|   |   +---mdx-blog-post
+|   |   |       index.html
+|   |   |       
+|   |   +---tags
+|   |   |   |   index.html
+|   |   |   |   
+|   |   |   +---docusaurus
+|   |   |   |       index.html
+|   |   |   |       
+|   |   |   +---facebook
+|   |   |   |       index.html
+|   |   |   |       
+|   |   |   +---hello
+|   |   |   |       index.html
+|   |   |   |       
+|   |   |   \---hola
+|   |   |           index.html
+|   |   |           
+|   |   \---welcome
+|   |           index.html
+|   |           
+|   +---docs
+|   |   +---category
+|   |   |   \---tutorial---extras
+|   |   |           index.html
+|   |   |           
+|   |   +---chapter-1
+|   |   |       index.html
+|   |   |       
+|   |   +---chapter-2
+|   |   |       index.html
+|   |   |       
+|   |   +---chapter-3
+|   |   |       index.html
+|   |   |       
+|   |   +---chapter-4
+|   |   |       index.html
+|   |   |       
+|   |   +---chapter-5
+|   |   |       index.html
+|   |   |       
+|   |   +---chapter-6
+|   |   |       index.html
+|   |   |       
+|   |   +---glossary
+|   |   |       index.html
+|   |   |       
+|   |   +---intro
+|   |   |       index.html
+|   |   |       
+|   |   +---module-summaries
+|   |   |       index.html
+|   |   |       
+|   |   +---syllabus
+|   |   |       index.html
+|   |   |       
+|   |   \---tutorial-extras
+|   |       +---manage-docs-versions
+|   |       |       index.html
+|   |       |       
+|   |       \---translate-your-site
+|   |               index.html
+|   |               
+|   \---img
+|           chap-1.png
+|           chap-2.png
+|           chap-3.png
+|           chap-4.png
+|           chap-5.png
+|           chap-6.png
+|           docusaurus-social-card.jpg
+|           favicon.ico
+|           logo.png
+|           robot.svg
+|           
 +---docs
-|   +---tutorial-basics
-|   |       congratulations.md
-|   |       create-a-blog-post.md
-|   |       create-a-document.md
-|   |       create-a-page.md
-|   |       deploy-your-site.md
-|   |       markdown-features.mdx
-|   |       _category_.json
-|   |       
-|   \---tutorial-extras
-|       |   manage-docs-versions.md
-|       |   translate-your-site.md
-|       |   _category_.json
-|       |   
-|       \---img
-|               docsVersionDropdown.png
-|               localeDropdown.png
-|               
+|   |   chapter-1.md
+|   |   chapter-2.md
+|   |   chapter-3.md
+|   |   chapter-4.md
+|   |   chapter-5.md
+|   |   chapter-6.md
+|   |   glossary.md
+|   |   intro.md
+|   |   module-summaries.md
+|   |   syllabus.md
+|   |   
+|   +---tutorial-extras
+|   |   |   manage-docs-versions.md
+|   |   |   translate-your-site.md
+|   |   |   _category_.json
+|   |   |   
+|   |   \---img
+|   |           docsVersionDropdown.png
+|   |           localeDropdown.png
+|   |           
+|   \---_templates
+|           chapter.md
+|           
 +---history
 |   \---prompts
 |       +---001-physical-ai-book
@@ -317,14 +503,36 @@ C:.
 |   |       
 |   +---.cache
 |   |   \---webpack
-|   |       \---client-development-en
+|   |       +---client-development-en
+|   |       |       0.pack
+|   |       |       1.pack
+|   |       |       10.pack
+|   |       |       11.pack
+|   |       |       12.pack
+|   |       |       13.pack
+|   |       |       14.pack
+|   |       |       15.pack
+|   |       |       2.pack
+|   |       |       3.pack
+|   |       |       4.pack
+|   |       |       5.pack
+|   |       |       6.pack
+|   |       |       7.pack
+|   |       |       8.pack
+|   |       |       9.pack
+|   |       |       index.pack
+|   |       |       index.pack.old
+|   |       |       
+|   |       +---client-production-en
+|   |       |       0.pack
+|   |       |       1.pack
+|   |       |       2.pack
+|   |       |       index.pack
+|   |       |       index.pack.old
+|   |       |       
+|   |       \---server-production-en
 |   |               0.pack
 |   |               1.pack
-|   |               2.pack
-|   |               3.pack
-|   |               4.pack
-|   |               5.pack
-|   |               6.pack
 |   |               index.pack
 |   |               index.pack.old
 |   |               
@@ -43369,16 +43577,7 @@ C:.
 |           package.json
 |           readme.md
 |           
-+---specs
-|   \---001-physical-ai-book
-|       |   plan.md
-|       |   spec.md
-|       |   tasks.md
-|       |   
-|       \---checklists
-|               requirements.md
-|               
-+---src
++---rsc
 |   +---components
 |   |   \---HomepageFeatures
 |   |           index.tsx
@@ -43392,14 +43591,37 @@ C:.
 |           index.tsx
 |           markdown-page.md
 |           
++---specs
+|   \---001-physical-ai-book
+|       |   plan.md
+|       |   spec.md
+|       |   tasks.md
+|       |   
+|       \---checklists
+|               requirements.md
+|               
++---src
+|   +---components
+|   |       HomePageFeatures.js
+|   |       styles.module.css
+|   |       
+|   +---css
+|   |       custom.css
+|   |       module.module.css
+|   |       
+|   \---pages
+|           index.js
+|           
 \---static
-    |   .nojekyll
-    |   
     \---img
+            chap-1.png
+            chap-2.png
+            chap-3.png
+            chap-4.png
+            chap-5.png
+            chap-6.png
             docusaurus-social-card.jpg
-            docusaurus.png
-            logo.svg
-            undraw_docusaurus_mountain.svg
-            undraw_docusaurus_react.svg
-            undraw_docusaurus_tree.svg
+            favicon.ico
+            logo.png
+            robot.svg
             
