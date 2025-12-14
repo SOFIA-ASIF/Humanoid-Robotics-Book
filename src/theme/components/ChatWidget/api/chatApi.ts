@@ -8,7 +8,7 @@
 //   ? 'https://rag-chatbot-backend-cjwy.onrender.com'
 //   : 'http://localhost:8000';
 
-const API_BASE_URL ='https://humanoid-robotics-book-fawn.vercel.app';
+const API_BASE_URL ='https://robotics-book-chatbot-backend.onrender.com';
 
 export interface ChatRequest {
   message: string;
