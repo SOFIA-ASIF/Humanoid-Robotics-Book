@@ -103,7 +103,7 @@ const config: Config = {
         },
         {
           to: "/auth",
-          label: "Sign Up",
+          label: "Sofia Asif",
           position: "right",
         },
         {
